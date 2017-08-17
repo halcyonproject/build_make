@@ -462,6 +462,8 @@ function _lunch_meat()
 
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || echo
 
+    fixup_common_out_dir
+
     set_stuff_for_environment
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || printconfig
 
@@ -557,6 +559,13 @@ function lunch()
         if [[ -z $variant ]]; then
             variant=eng
         fi
+    fi
+
+    if ! check_product $product $release
+    then
+        echo
+        echo "Invalid product: $product-$release"
+        return 1
     fi
 
     # Validate the selection and set all the environment stuff
