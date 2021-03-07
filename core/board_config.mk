@@ -320,6 +320,12 @@ ifneq (,$(BOARD_BOOTCONFIG)$(BOARD_BOOTCONFIG_FILE))
   INTERNAL_BOOTCONFIG_FILE := $(BOARD_BOOTCONFIG_FILE)
 endif
 
+ifneq ($(filter official,$(AWAKEN_BUILD_TYPE)),)
+ifneq ($(filter androidboot.selinux=permissive,$(INTERNAL_KERNEL_CMDLINE)),)
+$(error Permissive selinux in official builds is not allowed)
+endif
+endif
+
 ifneq ($(filter %64,$(TARGET_ARCH)),)
   TARGET_IS_64_BIT := true
 endif
