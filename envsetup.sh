@@ -597,6 +597,9 @@ function lunch()
         return 1
     fi
 
+    # Generate build-manifest.xml after roomservice finishes
+    vendor/lineage/build/tools/gen_build-manifest.sh
+
     # Validate the selection and set all the environment stuff
     _lunch_meat $product $release $variant
 
