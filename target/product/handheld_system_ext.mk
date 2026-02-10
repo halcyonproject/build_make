@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_system_ext.mk)
 PRODUCT_PACKAGES += \
     AccessibilityMenu \
     AvatarPicker \
-    Launcher3QuickStep \
+    NestQuickStep \
     Provision \
     Settings \
     StorageManager \

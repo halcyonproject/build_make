@@ -96,7 +96,7 @@ android_filesystem_defaults {
         ///////////////////////////////////////////
 
         // handheld packages
-        "Launcher3QuickStep",
+        "NestQuickStep",
         "Provision",
         "Settings",
         "StorageManager",

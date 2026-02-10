@@ -483,10 +483,10 @@ $(call add-clean-step, rm -rf $(TARGET_COMMON_OUT_ROOT)/obj_asan/JAVA_LIBRARIES/
 # Remove stale init.noenforce.rc
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/init/gsi/init.noenforce.rc)
 
-# Clean up Launcher3 which has been replaced with Launcher3QuickStep
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Launcher3)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/priv-app/Launcher3)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/Launcher3_intermediates)
+# Clean up Nest which has been replaced with NestQuickStep
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Nest)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/priv-app/Nest)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/Nest_intermediates)
 
 # Remove old merged AndroidManifest.xml location
 $(call add-clean-step, rm -rf $(TARGET_OUT_COMMON_INTERMEDIATES)/APPS/*_intermediates/AndroidManifest.xml)
