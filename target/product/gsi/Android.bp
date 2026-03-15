@@ -129,7 +129,6 @@ android_filesystem_defaults {
         ///////////////////////////////////////////
         // gsi_product
         ///////////////////////////////////////////
-        "Browser2",
         "Camera2",
         "Dialer",
         "LatinIME",
@@ -190,7 +189,6 @@ android_system_image {
         "Calendar",
         "Contacts",
         "DeskClock",
-        "Gallery2",
         "Music",
         "preinstalled-packages-platform-handheld-product.xml",
         "QuickSearchBox",
